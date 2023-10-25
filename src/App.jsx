@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MovieDetails from './components/MovieDetails/MovieDetails';
+import MovieDetails from './components/Details/MovieDetails';
+import TvDetails from './components/Details/TvDetails';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='movie/:id' element={<MovieDetails/>}/>
+        <Route path='tv/:id' element={<TvDetails/>}/>
       </Routes>
     </Router>
     

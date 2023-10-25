@@ -75,14 +75,3 @@ export default function Home() {
 
 
 
-
-// old code:
-
-//   const [displayArr, setDisplayArr] = useState([]);
-
-//   if (!loading) {
-//     setDisplayArr(trendArr)
-//   }
-
-//   let displayArr = [];
-//   displayArr = trendArr;

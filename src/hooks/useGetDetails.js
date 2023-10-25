@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 
 import axios from "axios";
 
-const useGetMovies = (url) => {
-  const [movieArr, setMovieArr] = useState();
+const useGetDetails = (url) => {
+  const [details, setDetails] = useState();
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
 
-  const loadMovies = async () => {
+  const loadDetails = async () => {
     try {
         const res = await axios.get(url);
-        console.log( res.data.results)
-        setMovieArr( res.data.results)
-        console.log(movieArr);
+        console.log( res.data)
+        setDetails( res.data)
+        console.log(details);
         setLoading(false);
     } catch(error) {
         console.log(error);
@@ -22,13 +22,13 @@ const useGetMovies = (url) => {
         setLoading(false);
     }
     };
-    
+
   useEffect(()=>{
   
-        loadMovies();
+        loadDetails();
     }, [url])
 
-    return [loading, error, movieArr];
+    return [loading, error, details];
 };
 
-export default useGetMovies;
+export default useGetDetails;
