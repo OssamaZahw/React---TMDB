@@ -10,7 +10,7 @@ export default function Home() {
   const [loading, error, apiArr] = useGetMovies(apiUrl);
   const [displayArr, setDisplayArr] = useState([]);
   const [filterParam, setFilterParam] = useState('')
-  // let filterParam = 'movie';
+
 
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
           
         } else {
           setApiUrl(trendUrl);
-          // filterMovies(filterParam);
+          
         }
   }
 
@@ -53,7 +53,6 @@ export default function Home() {
   const handleFilter = (e) => {
     console.log(e.target.value)
     setFilterParam(e.target.value)
-    // filterParam = e.target.value
     console.log(filterParam)
     filterMovies(filterParam);
   };
@@ -61,7 +60,6 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        {/* <button onClick={filter}>test filter</button> */}
         <input type="text" onChange={handleSearch} />
         <select name="filter" id="types" onChange={handleFilter}>
             <option value="">All</option>
