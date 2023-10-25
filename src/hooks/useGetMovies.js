@@ -9,23 +9,23 @@ const useGetMovies = (url) => {
   const [error, setError] = useState(false);
 
 
+  const loadMovies = async () => {
+    try {
+        const res = await axios.get(url);
+        console.log( res.data.results)
+        setMovieArr( res.data.results)
+        console.log(movieArr);
+        setLoading(false);
+    } catch(error) {
+        console.log(error);
+        setError('error from')
+        setLoading(false);
+    }
+    };
   useEffect(()=>{
-      const loadMovies = async () => {
-        try {
-            const res = await axios.get(url);
-            console.log(await res.data.results)
-            setMovieArr(await res.data.results)
-            console.log(movieArr);
-            setLoading(false);
-        } catch(error) {
-            console.log(error);
-            setError('error from server')
-            setLoading(false);
-        }
-        };
   
         loadMovies();
-    }, [])
+    }, [url])
 
     return [loading, error, movieArr];
 };
