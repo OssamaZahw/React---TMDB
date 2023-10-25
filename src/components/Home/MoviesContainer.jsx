@@ -8,7 +8,7 @@ export default function MoviesContainer({loading, displayArr}) {
     const moviesRender = displayArr.map((el) => (
       <MovieCard
         key={el.id}
-        title={el.title}
+        title={el.title ? el.title : el.name}
         img={el.poster_path}
         rating={Math.round(el.vote_average * 10) / 10}
       />

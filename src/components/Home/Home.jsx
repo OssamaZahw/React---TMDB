@@ -32,7 +32,11 @@ export default function Home() {
     <>
       <div className="container">
         <button onClick={testSearch}>search Miss</button>
-        <button onClick={filter}>filter</button>
+        <select name="filter" id="types" onChange={filter}>
+            <option value="all">All</option>
+            <option value="movie">Movies</option>
+            <option value="tv">TV & Shows</option>
+        </select>
         <MoviesContainer loading={loading} displayArr={displayArr} />
       </div>
     </>

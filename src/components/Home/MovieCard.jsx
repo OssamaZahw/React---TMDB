@@ -8,7 +8,7 @@ export default function MovieCard({title, img, rating}) {
     <div className='card-cont col'>
         <div className='card-box '>
             <figure>
-                <img src={imgBase + img} alt="" />
+                <img src={img ? (imgBase + img) : 'https://storiavoce.com/wp-content/plugins/lightbox/images/No-image-found.jpg' } alt="" />
                 <figcaption>{rating}</figcaption>
             </figure>
 
