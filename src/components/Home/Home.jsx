@@ -10,30 +10,46 @@ export default function Home() {
   const [loading, error, apiArr] = useGetMovies(apiUrl);
   const [displayArr, setDisplayArr] = useState([]);
 
+
   useEffect(() => {
-    console.log("changed");
+    console.log("Api changed");
     if (!loading) {
       setDisplayArr([...apiArr]);
     }
   }, [apiArr]);
 
-  const testSearch = () => {
-    setApiUrl(
-      "https://api.themoviedb.org/3/search/multi?api_key=14bdd69ce887376edfafb09f23f78fe9&query=miss"
-    );
-  };
 
-  const filter = () => {
-    setDisplayArr([]);
-    console.log(displayArr);
+
+  const handleSearch = (e) => {
+      if (e.target.value){
+
+        const searchParam = e.target.value;
+        setApiUrl(
+          `https://api.themoviedb.org/3/search/multi?api_key=14bdd69ce887376edfafb09f23f78fe9&query=${searchParam}`
+          );
+        } else {
+          setApiUrl(trendUrl)
+        }
+  }
+
+  const handleFilter = (e) => {
+    if(e.target.value){
+      const filteredArr = apiArr.filter((el)=> el.media_type == e.target.value)
+      console.log(filteredArr);
+      setDisplayArr(filteredArr);
+    } else {
+      setDisplayArr(apiArr)
+
+    }
   };
 
   return (
     <>
       <div className="container">
-        <button onClick={testSearch}>search Miss</button>
-        <select name="filter" id="types" onChange={filter}>
-            <option value="all">All</option>
+        {/* <button onClick={filter}>test filter</button> */}
+        <input type="text" onChange={handleSearch} />
+        <select name="filter" id="types" onChange={handleFilter}>
+            <option value="">All</option>
             <option value="movie">Movies</option>
             <option value="tv">TV & Shows</option>
         </select>
@@ -42,6 +58,10 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
 
 // old code:
 
