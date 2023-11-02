@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieDetails from './components/Details/MovieDetails';
 import TvDetails from './components/Details/TvDetails';
+import Movies from './components/Movies/Movies';
+import TvShows from './components/TV Shows/TvShows';
 
 
 
@@ -20,6 +22,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='movie/:id' element={<MovieDetails/>}/>
         <Route path='tv/:id' element={<TvDetails/>}/>
+        <Route path='movies' element={<Movies/>}/>
+        <Route path='tv' element={<TvShows/>}/>
+
       </Routes>
     </Router>
     

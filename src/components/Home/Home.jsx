@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useGetMovies from "../../hooks/useGetMovies";
-import MoviesContainer from "./MoviesContainer";
+import MoviesContainer from "../Shared/MoviesContainer"
 
 export default function Home() {
   const trendUrl =
