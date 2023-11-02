@@ -2,17 +2,14 @@ img{
     width: 100%;
 }
 
-a{
-    text-decoration: none !important;
-    color:inherit !important;
-  }
 
-a:hover{
-    color: black !important;
-}
+
+
 .nav-brand{
     width: 150px;
 }
+
+
 
 .navbar-collapse{
     flex-grow: 0 !important;

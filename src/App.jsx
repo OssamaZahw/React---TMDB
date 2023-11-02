@@ -24,7 +24,6 @@ function App() {
         <Route path='tv/:id' element={<TvDetails/>}/>
         <Route path='movies' element={<Movies/>}/>
         <Route path='tv' element={<TvShows/>}/>
-
       </Routes>
     </Router>
     

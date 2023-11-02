@@ -20,10 +20,10 @@ function BasicExample() {
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="me-0 py-2 text-secondary fw-bold gap-3">
-            <Link to='/'>Home</Link>
-            <Link to='/movies'>Trending Movies</Link>
-            <Link to='/tv'>Trending Tv & Shows</Link>
+          <Nav className=" me-0 py-2 fw-bold gap-3 ">
+            <Link to='/' className=' nav-link'>Home</Link>
+            <Link to='/movies' className=' nav-link '>Trending Movies</Link>
+            <Link to='/tv' className=' nav-link '>Trending Shows</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
