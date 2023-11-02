@@ -12,17 +12,18 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-white ">
       <Container className=''>
-        <Navbar.Brand className='nav-brand'>
+        <div className="nav-brand">
           <Link to='/'>
           <img src={logo} alt="logo" className='logo-img'/>
           </Link>
-        </Navbar.Brand>
+        </div>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="me-0 text-secondary fw-bold">
-            <Nav.Link ><Link to='/'>Home</Link></Nav.Link>
-            <Nav.Link ><Link to='/movies'>Movies</Link></Nav.Link>
-            <Nav.Link ><Link to='/tv'>Tv & Shows</Link></Nav.Link>
+          <Nav className="me-0 py-2 text-secondary fw-bold gap-3">
+            <Link to='/'>Home</Link>
+            <Link to='/movies'>Trending Movies</Link>
+            <Link to='/tv'>Trending Tv & Shows</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -66,7 +66,10 @@ export default function Home() {
             <option value="movie">Movies</option>
             <option value="tv">TV & Shows</option>
         </select>
+        <div>
+        <p>Latest Movies & TV Shows</p>
         <MoviesContainer loading={loading} displayArr={displayArr} />
+        </div>
       </div>
     </>
   );

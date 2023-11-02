@@ -17,8 +17,6 @@ export default function MoviesContainer({loading, displayArr}) {
     ));
     return (
       <>
-        <div>Latest Movies & TV Shows</div>
-
         <div className='row row-cols-lg-4 row-cols-md-3 row-cols-2'
         >{moviesRender}</div>
       </>
