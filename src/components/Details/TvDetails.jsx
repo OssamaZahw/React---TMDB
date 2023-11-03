@@ -23,6 +23,12 @@ export default function TvDetails() {
     poster = {tvData.poster_path}
     year = {tvData.first_air_date.slice(0,4)}
     description = {tvData.overview}
+    trailerUrl={tvData.homepage}
+    duration={tvData.last_episode_to_air.runtime}
+    genres={tvData.genres}
+    date={tvData.first_air_date}
+    rating={tvData.vote_average}
+    status={tvData.status}
     />
       </>
     

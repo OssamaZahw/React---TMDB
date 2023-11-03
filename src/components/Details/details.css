@@ -1,0 +1,74 @@
+.hero {
+  height: 600px;
+  background-size: cover;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.582);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.mov-info {
+  position: relative;
+  top: 40%;
+}
+.info__txt {
+  position: relative;
+  min-height: 100% !important;
+  /* background-color: aqua; */
+}
+
+.sec-txt {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+}
+
+.sec-dark-txt {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.trailer-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.trailer-txt:hover {
+  color: #0ea5e9;
+}
+
+.fa-dot {
+  font-size: 4px;
+}
+
+.imdb {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* @media only screen and (max-width: 1200px) {
+    .mov-info{
+        top: 40%;
+    }
+} */
+
+@media only screen and (max-width: 767px) {
+  .mov-info,.sec-txt {
+    color: black !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* .mov-info {
+    top: 60%;
+  } */
+
+  .hero{
+    height: 300px;
+
+  }
+  .info__bottom{
+    flex-direction: column!important;
+  }
+}

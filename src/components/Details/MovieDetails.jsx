@@ -24,6 +24,12 @@ export default function MovieDetails() {
       poster = {movieData.poster_path}
       year = {movieData.release_date.slice(0,4)}
       description = {movieData.overview}
+      trailerUrl={movieData.homepage}
+      duration={movieData.runtime}
+      genres={movieData.genres}
+      date={movieData.release_date}
+      rating={movieData.vote_average}
+      status={movieData.status}
       />
         </>
       

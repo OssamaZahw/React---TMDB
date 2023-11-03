@@ -1,6 +1,10 @@
 .mov-rating{
-    background-color: blue;
+    background-color: #39bed7;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.card-box:hover{
+    scale: 1.02;
 }
