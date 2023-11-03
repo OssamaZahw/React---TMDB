@@ -1,11 +1,11 @@
 import logo from './logo.svg';
-import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import MovieDetails from './components/Details/MovieDetails';
 import TvDetails from './components/Details/TvDetails';
 import Movies from './components/Movies/Movies';

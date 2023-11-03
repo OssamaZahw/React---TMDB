@@ -1,0 +1,12 @@
+.search-gp{
+    display: flex;
+    gap: 2%;
+}
+
+/* .home-search{
+    width: 70%;
+} */
+
+.home-select{
+    width: 20% !important;
+}

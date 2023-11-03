@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useGetMovies from "../../hooks/useGetMovies";
 import MoviesContainer from "../Shared/MoviesContainer"
+import './home.css'
 
 export default function Home() {
   const trendUrl =
@@ -60,12 +61,14 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        <input type="text" onChange={handleSearch} />
-        <select name="filter" id="types" onChange={handleFilter}>
+        <div className="search-gp form-group py-5">
+        <input type="text" placeholder="Search Here .." className="home-search form-control " onChange={handleSearch} />
+        <select name="filter" id="types" className="home-select form-select d-inline " onChange={handleFilter}>
             <option value="">All</option>
             <option value="movie">Movies</option>
             <option value="tv">TV & Shows</option>
         </select>
+        </div>
         <div>
         <p>Latest Movies & TV Shows</p>
         <MoviesContainer loading={loading} displayArr={displayArr} />

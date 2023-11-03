@@ -1,16 +1,8 @@
-img{
-    width: 100%;
-}
-
-
-
-
 .nav-brand{
     width: 150px;
 }
 
-
-
 .navbar-collapse{
     flex-grow: 0 !important;
 }
+
