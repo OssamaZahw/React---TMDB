@@ -43,11 +43,11 @@ export default function Details({
       >
         <div className="hero-overlay"></div>
 
-        <div className="mov-info container mx-auto row justify-content-center justify-content-md-between  text-white gap-1">
+        <div className="mov-info container mx-auto row justify-content-center justify-content-md-between  text-white gap-1 pb-5">
 
           <figure className="info__poster col-xxl-3 col-lg-4 col-md-6 col-8 d-flex justify-content-center">
             <img
-              className="poster-img shadow border border-dark"
+              className="poster-img shadow border border-dark border-opacity-75"
               src={posterPath + poster}
               alt=""
             />
@@ -80,7 +80,7 @@ export default function Details({
 
             <div className="info__bottom text-dark  d-flex flex-row flex-md-column flex-lg-row justify-content-between  align-items-center">
               <div className="d-flex align-items-end gap-4 mt-4 mt-lg-0">
-                <h5 className="fs-3 fw-bold">{rating} <span className="imdb">IMDB</span></h5>
+                <h5 className="fs-3 fw-bold">{Math.round(rating *10)/10} <span className="imdb">IMDB</span></h5>
                 <div className="ps-4 border-start d-flex flex-column justify-content-end">
                   <p className="sec-dark-txt mb-2">Status</p>
                   <p className="m-0 fw-bold">{status}</p>

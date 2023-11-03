@@ -24,7 +24,9 @@ function TvShows() {
 
   return (
     <div className="container">
-    <div>TvShows</div>
+    <div>
+    <h3 className='my-4'>Trending Shows</h3>
+    </div>
     <MoviesContainer loading={loading} displayArr={displayArr} />
     </div>
     

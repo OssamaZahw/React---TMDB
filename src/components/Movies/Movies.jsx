@@ -25,7 +25,9 @@ function Movies() {
 
   return (
     <div className="container">
-    <div>Movies</div>
+    <div>
+      <h3 className='my-4'>Trending Movies</h3>
+    </div>
     <MoviesContainer loading={loading} displayArr={displayArr} />
     </div>
   )

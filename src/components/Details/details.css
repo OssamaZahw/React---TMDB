@@ -47,23 +47,19 @@
   font-weight: 700;
 }
 
-/* @media only screen and (max-width: 1200px) {
-    .mov-info{
-        top: 40%;
-    }
-} */
+
 
 @media only screen and (max-width: 767px) {
   .mov-info,.sec-txt {
     color: black !important;
   }
+  .hero{
+    height: 450px;
+
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  /* .mov-info {
-    top: 60%;
-  } */
-
   .hero{
     height: 300px;
 

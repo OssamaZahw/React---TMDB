@@ -1,5 +1,5 @@
 .search-gp{
-    display: flex;
+    /* display: flex; */
     gap: 2%;
 }
 
@@ -7,6 +7,6 @@
     background-color: #94a3b888;
 }
 
-.home-select{
-    width: 20% !important;
-}
+/* .home-select{
+    width: 25% !important;
+} */
