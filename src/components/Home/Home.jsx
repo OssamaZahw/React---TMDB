@@ -60,8 +60,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="container">
-        <div className="search-gp form-group py-5">
+      <section className="search-sec py-5">
+        <div className="container search-gp form-group py-5">
         <input type="text" placeholder="Search Here .." className="home-search form-control " onChange={handleSearch} />
         <select name="filter" id="types" className="home-select form-select d-inline " onChange={handleFilter}>
             <option value="">All</option>
@@ -69,11 +69,14 @@ export default function Home() {
             <option value="tv">TV & Shows</option>
         </select>
         </div>
-        <div>
-        <p>Latest Movies & TV Shows</p>
+        </section>
+
+        <section className="display-sec">
+        <div className="container py-5">
+        <h3 className="py-3">Latest Movies & TV Shows</h3>
         <MoviesContainer loading={loading} displayArr={displayArr} />
         </div>
-      </div>
+        </section>
     </>
   );
 }

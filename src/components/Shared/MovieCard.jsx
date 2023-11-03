@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import './movieCard.css'
 
 
 export default function MovieCard({id, title, img, rating, type}) {
@@ -9,10 +10,10 @@ export default function MovieCard({id, title, img, rating, type}) {
   return (
     <div className='card-cont col'>
         <div className='card-box '>
-            <figure>
-              <Link to={`/${type}/${id}`}>
+            <figure className='position-relative'>
+              <Link to={`/${type}/${id}`} >
                 <img src={img ? (imgBase + img) : 'https://storiavoce.com/wp-content/plugins/lightbox/images/No-image-found.jpg' } alt="" />
-                <figcaption>{rating}</figcaption>
+                <figcaption className='mov-rating'>{rating}</figcaption>
               </Link>
             </figure>
 
