@@ -12,12 +12,12 @@ const useGetMovies = (url) => {
   const loadMovies = async () => {
     try {
         const res = await axios.get(url);
-        console.log( res.data.results)
+        // console.log( res.data.results)
         setMovieArr( res.data.results)
-        console.log(movieArr);
+        // console.log(movieArr);
         setLoading(false);
     } catch(error) {
-        console.log(error);
+        // console.log(error);
         setError('error from')
         setLoading(false);
     }

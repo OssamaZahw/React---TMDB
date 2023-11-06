@@ -12,7 +12,7 @@ function Movies() {
 
     const filterMovies = () => {
         const filteredArr = trendArr.filter((el)=> el.media_type == 'movie')
-        console.log(filteredArr);
+        // console.log(filteredArr);
         setDisplayArr(filteredArr);
       }
 

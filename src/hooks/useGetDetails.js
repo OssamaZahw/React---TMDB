@@ -12,12 +12,12 @@ const useGetDetails = (url) => {
   const loadDetails = async () => {
     try {
         const res = await axios.get(url);
-        console.log( res.data)
+        // console.log( res.data)
         setDetails( res.data)
-        console.log(details);
+        // console.log(details);
         setLoading(false);
     } catch(error) {
-        console.log(error);
+        // console.log(error);
         setError('error from')
         setLoading(false);
     }

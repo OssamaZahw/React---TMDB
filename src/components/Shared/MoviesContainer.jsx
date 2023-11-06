@@ -6,7 +6,7 @@ export default function MoviesContainer({loading, displayArr}) {
 
 
  if (!loading) {
-    console.log(displayArr);
+    // console.log(displayArr);
     const moviesRender = displayArr.map((el) => (
       <MovieCard
         key={el.id}
@@ -24,7 +24,7 @@ export default function MoviesContainer({loading, displayArr}) {
       </>
     );
   } else {
-    console.log("loading");
+    // console.log("loading");
     return <p>Loading ..</p>;
   }
 }

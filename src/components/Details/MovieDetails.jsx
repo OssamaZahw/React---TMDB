@@ -14,7 +14,7 @@ export default function MovieDetails() {
 
  
     if (!loading) {
-      console.log(movieData.title)
+      // console.log(movieData.title)
 
       return (
         <>

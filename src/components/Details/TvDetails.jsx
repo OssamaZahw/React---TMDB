@@ -7,13 +7,13 @@ import Details from "./Details";
 export default function TvDetails() {
   const params = useParams();
   const tvID = params.id;
-  console.log(tvID)
+  // console.log(tvID)
   const apiUrl = `https://api.themoviedb.org/3/tv/${tvID}?api_key=14bdd69ce887376edfafb09f23f78fe9`;
 
   const [loading, error, tvData] = useGetDetails(apiUrl)
 
   if (!loading) {
-    console.log(tvData)
+    // console.log(tvData)
 
     return (
       <>

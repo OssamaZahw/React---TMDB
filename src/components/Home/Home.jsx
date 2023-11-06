@@ -13,7 +13,7 @@ export default function Home() {
   const [filterParam, setFilterParam] = useState("");
 
   useEffect(() => {
-    console.log("Api changed");
+    // console.log("Api changed");
     if (!loading) {
       filterMovies(filterParam);
       // setDisplayArr([...apiArr]);
@@ -34,7 +34,7 @@ export default function Home() {
   const filterMovies = (type) => {
     if (type) {
       const filteredArr = apiArr.filter((el) => el.media_type == type);
-      console.log(filteredArr);
+      // console.log(filteredArr);
       setDisplayArr(filteredArr);
     } else {
       setDisplayArr(apiArr);
@@ -42,9 +42,9 @@ export default function Home() {
   };
 
   const handleFilter = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setFilterParam(e.target.value);
-    console.log(filterParam);
+    // console.log(filterParam);
     filterMovies(filterParam);
   };
 
