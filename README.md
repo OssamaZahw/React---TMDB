@@ -8,7 +8,7 @@ This was a task in a react course, and the requirements were as follows:
 * Use **client-side filtration** to filter API response into *Movies* and *TV Shows*.
 * Use **server-side filtration** to search for movies.
 
-This project was done with React.js, using custom hooks, and without using Redux as it was unnecessary.
+This project was done with React.js, using react & custom hooks, React-router, Axios for API requests, and without using Redux as it was unnecessary.
 The website is responsive and is styled using React Bootstrap
 
 ## Changelog:
